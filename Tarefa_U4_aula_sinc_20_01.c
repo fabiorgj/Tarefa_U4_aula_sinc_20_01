@@ -553,6 +553,10 @@ void func_A(void)
 
 void func_B(void)
 {
+     for (uint i = 0; i < LED_COUNT; ++i){
+        npSetLED(i, 0, 0, 255);
+    }
+    npWrite();
 }
 
 void func_C(void)

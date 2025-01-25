@@ -40,6 +40,9 @@ add_executable(Tarefa_U4_aula_sinc_20_01 Tarefa_U4_aula_sinc_20_01.c )
 pico_set_program_name(Tarefa_U4_aula_sinc_20_01 "Tarefa_U4_aula_sinc_20_01")
 pico_set_program_version(Tarefa_U4_aula_sinc_20_01 "0.1")
 
+# Generate PIO header
+pico_generate_pio_header(Tarefa_U4_aula_sinc_20_01 ${CMAKE_CURRENT_LIST_DIR}/ws2818b.pio)
+
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(Tarefa_U4_aula_sinc_20_01 0)
 pico_enable_stdio_usb(Tarefa_U4_aula_sinc_20_01 1)

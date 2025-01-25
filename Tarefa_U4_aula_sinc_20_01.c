@@ -16,8 +16,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Definição da quantidade de frames das animações
-//  É necessário definir a quantidade de frames de cada animação
-//  As animações não podem ter mais de 15 frames
+//  É necessário definir a quantidade de frames de cada animação.
 
 #define fps 5
 

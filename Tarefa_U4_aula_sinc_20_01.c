@@ -505,7 +505,18 @@ void func_1(void)
 
 void func_2(void)
 {
-
+for (int i = 0; i < repeticoes; i++)
+    {
+        for (int s = 0; s < frames_animex_2; s++)
+        {
+            frames_animex = frames_animex_2;
+            desenhar_sprite(animex_2, s);
+            sleep_ms(1000 / fps);
+            aciona_buzzer();
+            npWrite(); // Escreve os dados nos LEDs.
+        }
+    }
+    npClear(); 
 }
 
 void func_3(void)

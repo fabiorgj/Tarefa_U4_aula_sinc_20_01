@@ -26,7 +26,7 @@
 #define frames_animex_2 5
 #define frames_animex_3 0
 #define frames_animex_4 5
-#define frames_animex_5 5
+#define frames_animex_5 6
 #define frames_animex_6 6
 
 int frames_animex;

@@ -20,7 +20,7 @@
 
 #define fps 5
 
-#define repeticoes 2
+#define repeticoes 3
 
 #define frames_animex_1 12
 #define frames_animex_2 5
@@ -566,7 +566,7 @@ int main()
             func_reboot();
             break;
         case '#':
-            func_hash;
+            func_hash();
             break;
         default:
             break; // Nenhuma tecla válida
@@ -685,6 +685,7 @@ void func_C(void)
 
 void func_D(void)
 {
+    
 }
 
 void func_reboot(void)

@@ -6,7 +6,7 @@
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 5
 #define MATRIX_DEPTH 3
-#define QUNATIDADE_DE_IMAGENS 5
+#define QUNATIDADE_DE_IMAGENS 6
 
 // Função para converter valores ARGB (0xAARRGGBB) para RGB
 void convertToRGB(int argb, int rgb[3]) {
@@ -20,6 +20,7 @@ int main() {
     int argb_values[QUNATIDADE_DE_IMAGENS][MATRIX_ROWS * MATRIX_COLS] = {
 ///////////////////////////////////////////////////////////////////////// SUBSTITUIR TODOS OS SPRITES A PARTIR DAQUI
 {
+
 0xff9d2d8c, 0xff9d2d8c, 0x00000000, 0x00000000, 0x00000000, 
 0x00000000, 0xff9d2d8c, 0x00000000, 0x00000000, 0x00000000, 
 0x00000000, 0xff9d2d8c, 0x00000000, 0x00000000, 0x00000000, 

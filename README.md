@@ -47,7 +47,7 @@ Tecla #, aciona todas as três cores de os LEDs, formando a cor branca, com 20% 
 Telca *, coloca a raspberry em modo bootloader
 
 ## TESTES NO DESENVOLVIMENTO  
-Durante o desenvolvimento do código a equipe utilizou printfs com informações especificas para ajudar a rastrear o fluxo do código
+Durante o desenvolvimento, a equipe utilizou printfs estratégicos para depurar o código, rastreando o fluxo e validando o funcionamento das funcionalidades.
 
 ## HARDWARE E SIMULAÇÃO  
 Foi utilizado o Wokwi integrado ao VS Code para simular o hardware necessário. A lista de componentes e suas conexões está a seguir:   

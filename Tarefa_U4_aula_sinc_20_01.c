@@ -1,3 +1,23 @@
+/*Embarcatech - U4 - Microcontroladores
+
+Atividade: Geração de animações em uma matriz de LEDs 5x5. - Aula sícrona de 20/01/2025
+
+Grupo 1, Subgrupo 8
+
+Integrantes:
+
+Fábio Rocha Gomes Jardim  (líder)
+
+Igor de Eça Almeida  
+
+Kauan Lopes de Jesus  
+
+Larissa Batista dos Santos  
+
+Luis Guilherme Coelho Saturnino  
+
+Paolla Giselle Ribeiro  */
+
 #include "pico/stdlib.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -301,7 +321,7 @@ int animex_5[frames_animex_5][5][5][3] = {
 // Definição de pixel GRB
 struct pixel_t
 {
-    uint8_t G, R, B; // Três valores de 8-bits compõem um pixel.
+    uint32_t G, R, B; // Três valores compõem um pixel.
 };
 typedef struct pixel_t pixel_t;
 typedef pixel_t npLED_t; // Mudança de nome de "struct pixel_t" para "npLED_t" por clareza.
@@ -346,7 +366,7 @@ void npInit(uint pin)
 /**
  * Atribui uma cor RGB a um LED.
  */
-void npSetLED(const uint index, const uint8_t r, const uint8_t g, const uint8_t b)
+void npSetLED(const uint index, const uint32_t r, const uint32_t g, const uint32_t b)
 {
     leds[index].R = r;
     leds[index].G = g;
